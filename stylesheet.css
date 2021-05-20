@@ -3,7 +3,93 @@
 :root {
   --dark-cyan: hsl(185, 75%, 39%);
   --very-dark-blue: hsl(229, 23%, 23%);
-  --grayis-blue: hsl(227, 10%, 46%);
+  --grayish-blue: hsl(227, 10%, 46%);
   --gray: hsl(0, 0%, 59%);
   --font-size: 18px;
 }
+
+body {
+  margin: 0;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+
+.container {
+  height: 100vh;
+  background-color: var(--dark-cyan);
+  background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+  background-position: top left, right bottom;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 40%;
+  padding-top: 150px;
+}
+
+.card {
+  text-align: center;
+  margin: 0 auto;
+  width: 350px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+
+.card-imgs {
+  background-image: url(images/bg-pattern-card.svg);
+}
+
+#victor {
+  position: relative;
+  top: 56px;
+  margin: 0 auto;
+  border-radius: 50px;
+  border: solid 4px white;
+}
+
+
+.card-txt {
+  background-color: white;
+  padding: 70px 0 20px 0;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: var(--font-size);
+  color: var(--very-dark-blue);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-user-infos {
+  border-bottom: solid 0.1px lightgrey;
+  padding-bottom: 35px;
+}
+
+#age {
+  color: var(--grayish-blue);
+}
+
+.city {
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--grayish-blue);
+  letter-spacing: 1px;
+}
+
+.card-stats {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 25px;
+}
+
+.numbers {
+  font-size: 16px;
+}
+
+.stat {
+  font-size: 10px;
+  color: var(--grayish-blue);
+  margin-top: 6px;
+  letter-spacing: 2px;
+}
+

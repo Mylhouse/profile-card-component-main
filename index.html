@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="stylesheet.css" rel="stylesheet">
 
   <title>Frontend Mentor | Profile card component</title>
 
@@ -15,21 +16,42 @@
   </style>
 </head>
 <body>
-  Victor Crest
-  26
-  London
+  <div class="container">
+    <div class="card">
+      <div class="card-imgs">
+        <img src="images/image-victor.jpg" alt="victor" id="victor">
+      </div>
 
-  80K
-  Followers
+      <div class="card-txt">
+        <div class="card-user-infos">
+          <p class="username"><strong>Victor Crest</strong> <span id="age">26</span></p>
+          <p class="city">London</p>
+        </div>
 
-  803K
-  Likes
+        <div class="card-stats">
+          <div class="card-stat">
+            <h2 class="numbers">80K</h2>
+            <p class="stat">Followers</p>
+          </div>
 
-  1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+          <div class="card-stat">
+            <h2 class="numbers">803K</h2>
+            <p class="stat">Likes</p>
+          </div>
+
+          <div class="card-stat">
+            <h2 class="numbers">1.4K</h2>
+            <p class="stat">Photos</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Mylhouse</a>.
+    </div> -->
   </div>
 </body>
 </html>
